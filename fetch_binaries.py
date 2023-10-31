@@ -18,7 +18,13 @@ with open('versions.yml') as vFile:
         filename = v["filename"]
         
         # Download binaries
-        urllib.request.urlretrieve(download_url, filename="%s%s" % (bin_dir, filename))
+        #   urllib.request.urlretrieve(download_url, filename="%s%s" % (bin_dir, filename))
+        try:
+            urllib.request.urlretrieve(download_url, filename="%s%s" % (bin_dir, filename))
+        except urllib.error.HTTPError as e:
+            print(f"The following URL is not found: {download_url}")
+            print(f"Error: {e}")
+            continue
 
         # Untar if needed
         if v["unarchive"] == True:
