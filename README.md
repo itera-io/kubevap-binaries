@@ -17,6 +17,7 @@ Make sure to update the versions properly in the `versions.yaml` file before mak
 ```
 git add versions.yaml
 git commit -m "generate kubernetes binaries for k8s version 1.27.7"
+git push origin master
 ```
 
 ## Tagging and Pushing Changes
