@@ -1,4 +1,4 @@
-kube_version: 1.27.4
+kube_version: 1.27.7
 
 components:
   calicoctl:
