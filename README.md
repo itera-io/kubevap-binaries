@@ -15,7 +15,7 @@ git clone https://github.com/itera-io/kubevap-binaries
 Make sure to update the versions properly in the `versions.yaml` file before making any commits. You can do this by modifying the file directly and then using the following commands to add and commit the changes:
 
 ```
-git add versions.yaml
+git add versions.yml
 git commit -m "generate kubernetes binaries for k8s version 1.27.7"
 git push origin master
 ```
