@@ -16,7 +16,7 @@ Make sure to update the versions properly in the `versions.yaml` file before mak
 
 ```
 git add versions.yml
-git commit -m "generate kubernetes binaries for k8s version 1.27.7"
+git commit -m "generate kubernetes binaries for k8s version v1.31.4"
 git push origin master
 ```
 
@@ -24,8 +24,8 @@ git push origin master
 
 To distinguish between development and production versions, make use of the appropriate tags. For example:
 ```
-git tag dev-v1.27.7
-git push origin dev-v1.27.7
+git tag dev-v1.31.4
+git push origin dev-v1.31.4
 ```
 
 ## GitHub Actions

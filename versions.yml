@@ -42,21 +42,21 @@ components:
 
   kubelet:
     version: "1.31.4"
-    download_url: "https://storage.googleapis.com/kubernetes-release/release/vVERSION/bin/linux/amd64/kubelet"
+    download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubelet"
     filename: "kubelet"
     unarchive: False
     file_to_extract: "linux-amd64/helm"
 
   kubeadm:
     version: "1.31.4"
-    download_url: "https://storage.googleapis.com/kubernetes-release/release/vVERSION/bin/linux/amd64/kubeadm"
+    download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubeadm"
     filename: "kubeadm"
     unarchive: False
     file_to_extract: ""
 
   kubectl:
     version: "1.31.4"
-    download_url: "https://storage.googleapis.com/kubernetes-release/release/vVERSION/bin/linux/amd64/kubectl"
+    download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubectl"
     filename: "kubectl"
     unarchive: False
     file_to_extract: ""
