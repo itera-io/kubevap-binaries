@@ -1,8 +1,8 @@
-kube_version: 1.31.4
+kube_version: 1.32.5
 
 components:
   calicoctl:
-    version: "v3.29.1"
+    version: "v3.30.3"
     download_url: "https://github.com/projectcalico/calico/releases/download/VERSION/calicoctl-linux-amd64"
     filename: "calicoctl"
     unarchive: False
@@ -11,7 +11,7 @@ components:
     download_on_node: True
 
   containerd:
-    version: "1.7.24"
+    version: "2.1.4"
     download_url: "https://github.com/containerd/containerd/releases/download/vVERSION/containerd-VERSION-linux-amd64.tar.gz"
     filename: "containerd.tar.gz"
     unarchive: True
@@ -20,14 +20,14 @@ components:
     download_on_node: True
 
   crictl:
-    version: "v1.31.1"
+    version: "v1.34.0"
     download_url: "https://github.com/kubernetes-sigs/cri-tools/releases/download/VERSION/crictl-VERSION-linux-amd64.tar.gz"
     filename: "crictl.tar.gz"
     unarchive: True
     file_to_extract: "crictl"
 
   etcd:
-    version: "v3.5.16"
+    version: "v3.5.22"
     download_url: "https://github.com/coreos/etcd/releases/download/VERSION/etcd-VERSION-linux-amd64.tar.gz"
     filename: "etcd.tar.gz"
     unarchive: True
@@ -41,35 +41,35 @@ components:
     file_to_extract: "linux-amd64/helm"
 
   kubelet:
-    version: "1.31.4"
+    version: "1.32.5"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubelet"
     filename: "kubelet"
     unarchive: False
     file_to_extract: "linux-amd64/helm"
 
   kubeadm:
-    version: "1.31.4"
+    version: "1.32.5"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubeadm"
     filename: "kubeadm"
     unarchive: False
     file_to_extract: ""
 
   kubectl:
-    version: "1.31.4"
+    version: "1.32.5"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubectl"
     filename: "kubectl"
     unarchive: False
     file_to_extract: ""
 
   runc:
-    version: "v1.2.3"
+    version: "v1.3.1"
     download_url: "https://github.com/opencontainers/runc/releases/download/VERSION/runc.amd64"
     filename: "runc"
     unarchive: False
     file_to_extract: ""
 
   nerdctl:
-    version: "1.7.7"
+    version: "2.1.4"
     download_url: "https://github.com/containerd/nerdctl/releases/download/vVERSION/nerdctl-VERSION-linux-amd64.tar.gz"
     filename: "nerdctl.tar.gz"
     unarchive: True
