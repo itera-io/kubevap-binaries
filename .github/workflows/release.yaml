@@ -4,6 +4,7 @@ on:
     tags:
       - 'dev-v*'
       - 'prod-v*'
+      - 'staging-v*'
 
 name: Create Release
 
