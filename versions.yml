@@ -34,7 +34,7 @@ components:
     file_to_extract: "" # Condition set on python script, untar() does not support extract list of files. etcdctl is embbeded
 
   helm:
-    version: "v4.0.4"
+    version: "v3.17.0"
     download_url: "https://get.helm.sh/helm-VERSION-linux-amd64.tar.gz"
     filename: "helm.tar.gz"
     unarchive: True
