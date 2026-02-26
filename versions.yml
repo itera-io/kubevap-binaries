@@ -1,8 +1,8 @@
-kube_version: 1.32.5
+kube_version: 1.35.0
 
 components:
   calicoctl:
-    version: "v3.30.3"
+    version: "v3.31.4"
     download_url: "https://github.com/projectcalico/calico/releases/download/VERSION/calicoctl-linux-amd64"
     filename: "calicoctl"
     unarchive: False
@@ -20,42 +20,42 @@ components:
     download_on_node: True
 
   crictl:
-    version: "v1.34.0"
+    version: "v1.35.0"
     download_url: "https://github.com/kubernetes-sigs/cri-tools/releases/download/VERSION/crictl-VERSION-linux-amd64.tar.gz"
     filename: "crictl.tar.gz"
     unarchive: True
     file_to_extract: "crictl"
 
   etcd:
-    version: "v3.5.22"
+    version: "v3.6.8"
     download_url: "https://github.com/coreos/etcd/releases/download/VERSION/etcd-VERSION-linux-amd64.tar.gz"
     filename: "etcd.tar.gz"
     unarchive: True
     file_to_extract: "" # Condition set on python script, untar() does not support extract list of files. etcdctl is embbeded
 
   helm:
-    version: "v3.16.4"
+    version: "v4.1.1"
     download_url: "https://get.helm.sh/helm-VERSION-linux-amd64.tar.gz"
     filename: "helm.tar.gz"
     unarchive: True
     file_to_extract: "linux-amd64/helm"
 
   kubelet:
-    version: "1.32.5"
+    version: "1.35.0"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubelet"
     filename: "kubelet"
     unarchive: False
-    file_to_extract: "linux-amd64/helm"
+    file_to_extract: ""
 
   kubeadm:
-    version: "1.32.5"
+    version: "1.35.0"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubeadm"
     filename: "kubeadm"
     unarchive: False
     file_to_extract: ""
 
   kubectl:
-    version: "1.32.5"
+    version: "1.35.0"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubectl"
     filename: "kubectl"
     unarchive: False
