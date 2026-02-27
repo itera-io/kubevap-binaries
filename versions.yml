@@ -1,4 +1,4 @@
-kube_version: 1.35.0
+kube_version: 1.35.1
 
 components:
   calicoctl:
@@ -41,21 +41,21 @@ components:
     file_to_extract: "linux-amd64/helm"
 
   kubelet:
-    version: "1.35.0"
+    version: "1.35.1"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubelet"
     filename: "kubelet"
     unarchive: False
     file_to_extract: ""
 
   kubeadm:
-    version: "1.35.0"
+    version: "1.35.1"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubeadm"
     filename: "kubeadm"
     unarchive: False
     file_to_extract: ""
 
   kubectl:
-    version: "1.35.0"
+    version: "1.35.1"
     download_url: "https://dl.k8s.io/release/vVERSION/bin/linux/amd64/kubectl"
     filename: "kubectl"
     unarchive: False
